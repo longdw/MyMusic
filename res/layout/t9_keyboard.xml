@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_keyboard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_2"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_3"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <ImageView
+            android:id="@+id/t9_delete"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_backspace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_4"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_5"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_6"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" >
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_7"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_8"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <com.ldw.music.view.KeyBoardKeyView
+            android:id="@+id/t9_key_9"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_bkg_common" />
+
+        <ImageView
+            android:id="@+id/t9_exit"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/keyboard_hiden" />
+    </LinearLayout>
+
+</LinearLayout>

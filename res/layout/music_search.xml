@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="43.0dip"
+        android:background="@drawable/keyboard_background_top"
+        android:orientation="horizontal"
+        android:paddingBottom="0.0dip"
+        android:paddingTop="3.0dip" >
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="1.0"
+            android:hint="请输入简拼和全拼"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingTop="0.0dip"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/keyboard_switcher"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/keyboard_switch" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:animationCache="true"
+        android:background="#ffffffff"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#ffd8d8d8"
+        android:dividerHeight="1.0dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" />
+
+    <include
+        layout="@layout/t9_keyboard" />
+
+</LinearLayout>

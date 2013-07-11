@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="slidingmenu_offset">100dp</dimen><!-- 60dp -->
+    <dimen name="shadow_width">15dp</dimen><!-- 15dp -->
+    
+    <dimen name="playqueue_dialog_marginright">0dp</dimen>
+    <dimen name="playqueue_dialog_marginbottom">60dp</dimen>
+    <dimen name="playqueue_dialog_width">250dp</dimen>
+    <dimen name="playqueue_dialog_height">380dp</dimen>
+    
+    <dimen name="title_text_sp">18sp</dimen>
+
+</resources>

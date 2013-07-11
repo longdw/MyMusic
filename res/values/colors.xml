@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="trans_white">#afffffff</color>
+    <color name="blue">#0000ff</color>
+    <color name="divider_color">#6fffffff</color>
+    <color name="bottom_color">#00000000</color>
+    <color name="top_color">#01589e</color>
+    
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="holo_blue_light2">#aa33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#3f000000</color>
+    <color name="grey_white">#fff0f0f0</color>
+    <color name="grey_dark_light">#55666666</color>
+    <color name="grey_dark">#ff454545</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="dialog_text_hint">#ffb0b0b0</color>
+    
+</resources>

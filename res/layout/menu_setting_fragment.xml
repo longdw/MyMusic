@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f7" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/holo_blue_light"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_music_btn"
+                android:padding="10dip"
+                android:src="@drawable/icon_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="设置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text_sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="摇晃手机"
+            android:textColor="#ff808080"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/menu_setting_stroke"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/shake_change_song"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/menu_setting_selector"
+                android:checkMark="@drawable/toggle_button_selector"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:padding="10.0dip"
+                android:text="摇一摇换歌"
+                android:textColor="#ff404040"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="歌词设置"
+            android:textColor="#ff808080"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/menu_setting_stroke"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/auto_download_lyric"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/menu_setting_selector"
+                android:checkMark="@drawable/toggle_button_selector"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:padding="10.0dip"
+                android:text="自动下载歌词"
+                android:textColor="#ff404040"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="文件过滤"
+            android:textColor="#ff808080"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/menu_setting_stroke"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/filter_size"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/menu_setting_selector_top"
+                android:checkMark="@drawable/toggle_button_selector"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:padding="10.0dip"
+                android:text="过滤小音频文件"
+                android:textColor="#ff404040"
+                android:textSize="16.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#cccccc" />
+
+            <CheckedTextView
+                android:id="@+id/filter_time"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/menu_setting_selector_bottom"
+                android:checkMark="@drawable/toggle_button_selector"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:padding="10.0dip"
+                android:text="过滤短时长音频文件"
+                android:textColor="#ff404040"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/menu_setting_stroke"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/setting_advice_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_setting_selector_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12.0dip" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我要提意见"
+                    android:textColor="#ff404040"
+                 android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/setting_about_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_setting_selector_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12.0dip" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关于"
+                    android:textColor="#ff404040"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

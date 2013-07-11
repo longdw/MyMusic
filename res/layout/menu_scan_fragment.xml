@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_frm_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/holo_blue_light"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_music_btn"
+            android:padding="10dip"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="扫描歌曲"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="70dip"
+        android:src="@drawable/img_scan_logo" />
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_scan_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dip"
+        android:text="开始扫描"
+        android:textSize="22sp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

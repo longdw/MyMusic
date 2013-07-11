@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/half_transparent"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的首页"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_color" >
+
+        <ImageView
+            android:id="@+id/headicon_iv"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:background="@drawable/img_album_background" />
+
+        <ImageButton
+            android:id="@+id/btn_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4.0dip"
+            android:background="@drawable/selector_music_btn"
+            android:padding="6.0dip"
+            android:src="@drawable/icon_menu_point" />
+
+        <View
+            android:id="@+id/split"
+            android:layout_width="1.5dip"
+            android:layout_height="64dip"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_toLeftOf="@id/btn_menu2"
+            android:background="#6a5e8a" />
+
+        <ImageButton
+            android:id="@+id/btn_playNext2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/split"
+            android:background="@drawable/selector_music_btn"
+            android:padding="6.0dip"
+            android:src="@drawable/icon_next_normal" />
+
+        <FrameLayout
+            android:id="@+id/playLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12.0dip"
+            android:layout_toLeftOf="@id/btn_playNext2" >
+
+            <ImageButton
+                android:id="@+id/btn_pause2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector_music_btn"
+                android:padding="6.0dip"
+                android:src="@drawable/icon_pause_normal"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btn_play2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector_music_btn"
+                android:padding="6.0dip"
+                android:src="@drawable/icon_play_normal" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6.0dip"
+            android:layout_toLeftOf="@id/playLayout"
+            android:layout_toRightOf="@id/headicon_iv"
+            android:orientation="vertical" >
+
+            <com.ldw.music.view.AlwaysMarqueeTextView
+                android:id="@+id/artist_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <com.ldw.music.view.AlwaysMarqueeTextView
+                android:id="@+id/musicname_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/position_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="00:00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/duration_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="00:00" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <ProgressBar
+        android:id="@+id/playback_seekbar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomLayout"
+        android:max="100"
+        android:maxHeight="2.0dip"
+        android:minHeight="2.0dip"
+        android:progressDrawable="@drawable/playback_seekbar2" />
+    
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_layout"
+        android:layout_above="@id/playback_seekbar2"
+        android:layout_margin="8.0dip"
+        android:horizontalSpacing="6.0dip"
+        android:numColumns="3"
+        android:verticalSpacing="6.0dip" />
+    
+    <com.ldw.music.view.MySlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/sliding_bg"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:visibility="invisible" >
+
+        <include layout="@layout/sliding_handle" />
+
+        <include layout="@layout/sliding_content" />
+    </com.ldw.music.view.MySlidingDrawer>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" >
+    </android.support.v4.view.ViewPager>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerSub"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

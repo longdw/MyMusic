@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff343434" >
+
+    <LinearLayout
+        android:id="@+id/frm_user_info"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/top_login_panel_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15.0dip" >
+
+        <TextView
+            style="@style/SlidingMenu.TextView.Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/txt_media_count"
+            style="@style/SlidingMenu.TextView.SubTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:text="共收藏0首歌曲"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frm_user_info" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_scan"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_search_dark"
+                android:text="扫描歌曲" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_play_mode"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_list_reapeat"
+                android:text="列表循环" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_background"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_change_background"
+                android:text="换背景" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_sleep"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_sleep_mode"
+                android:text="睡眠" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/preference_text"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/list_selector"
+                android:drawableLeft="@drawable/icon_preferences_dark"
+                android:drawablePadding="15.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:text="设置"
+                android:textColor="@android:color/white"
+                android:textSize="18.0sp" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_exit"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_exit"
+                android:text="退出" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_below="@id/frm_user_info"
+        android:background="@drawable/top_shadow" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gridview_item_selector"
+    android:padding="6.0dip" >
+    
+    <ImageView android:id="@+id/gridview_item_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_local_music"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView android:id="@+id/gridview_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/gridview_item_iv"
+        android:text="我的音乐"/>
+    
+    <TextView android:id="@+id/gridview_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/gridview_item_name"
+        android:text="88"/>
+
+</RelativeLayout>
